@@ -2,7 +2,9 @@ num1 = int(input("숫자1 : "))
 num2 = int(input("숫자2 : "))
 
 if num1 > num2:
-    num1, num2 = num2, num1
+    temp = num1
+    num1 = num2
+    num2 = temp
 
 while True:
     num1 += 1
@@ -10,3 +12,4 @@ while True:
         break
     
     print(f"{(num1) * (num1)}   ", end = "")
+
